@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.appdirect.com/rest/api/events/dummyNotice
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="statica-16287", oauth_nonce="WsOv09nHw5TqcnMLSnwGffhIlEN7KXoOX14zp334ho",
+        oauth_signature="2HoWoJn1Va0wrH%2Bqytqb%2FHNZ5dA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1414773355", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      - no-cache="set-cookie"
+      - private
+      Content-Type:
+      - application/xml;charset=UTF-8
+      Date:
+      - Fri, 31 Oct 2014 16:35:41 GMT
+      Expires:
+      - '0'
+      - Wed, 31 Dec 1969 19:00:00 EST
+      Pragma:
+      - no-cache
+      Server:
+      - APPSERVER
+      Set-Cookie:
+      - AWSELB=9DF3DFDB06E99836F49B4DBC3EB5DEE1BC2F4E2A51DC93894B5743680C134F214C9ED5CD7830863BD5B9D917450CCAC074115D10BF13AB9026347C3B6098744FCE8AD5B33F;PATH=/;MAX-AGE=3600
+      - JSESSIONID=D73433A6327A1412ED887D792D28FA87-n1; Path=/; Secure; HttpOnly
+      Strict-Transport-Security:
+      - max-age=0 ; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '392'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><event><flag>STATELESS</flag><marketplace><baseUrl>https://acme.appdirect.com</baseUrl><partner>ACME</partner></marketplace><payload><account><accountIdentifier>dummy-account</accountIdentifier><status>SUSPENDED</status></account><configuration/><notice><type>DEACTIVATED</type></notice></payload><type>SUBSCRIPTION_NOTICE</type></event>
+    http_version: 
+  recorded_at: Fri, 31 Oct 2014 16:35:55 GMT
+recorded_with: VCR 2.9.3

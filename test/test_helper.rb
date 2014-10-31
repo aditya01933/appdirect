@@ -9,5 +9,7 @@ VCR.configure do |c|
   c.hook_into :webmock
 end
 
-AppDirect.consumer_key="Dummy"
-AppDirect.secret="secret"
+# If you need to record more test responses using VCR you need genuine AppDirect keys
+# You can find them on the Edit Integration page of your AppDirect Product's dashboard.
+AppDirect.consumer_key=ENV["APPDIRECT_KEY"] || "Dummy"
+AppDirect.secret=ENV["APPDIRECT_SECRET"] || "secret"
