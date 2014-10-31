@@ -24,6 +24,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock",'~> 1.20'
   spec.add_development_dependency "rake"
 
-  spec.add_dependency 'oauth'
-  spec.add_dependency 'nori'
+  spec.add_dependency 'oauth', '~> 0.4'
+  spec.add_dependency 'nori', '~> 2.4'
 end
