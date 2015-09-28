@@ -25,5 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   spec.add_dependency 'oauth', '~> 0.4'
-  spec.add_dependency 'nori', '~> 2.4'
+  spec.add_dependency 'nori', '~> 1.1.0'
 end
