@@ -41,8 +41,8 @@ module AppDirect
     consumer = OAuth::Consumer.new(consumer_key, secret)
     access_token = OAuth::AccessToken.new(consumer)
     response = access_token.get(event_url)
-    parser = Nori.new
-    hash = parser.parse(response.body)
+   
+    hash = Nori.parse(response.body)
     [Util.symbolize_names(hash),consumer_key, secret]
   end
 end
